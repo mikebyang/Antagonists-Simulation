@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pageformat.css">
+        <title>Antagonists Game Simulation</title>
+        <!--all js libraries and files-->
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="sup_cast.js"></script>
+        <script language="javascript" type="text/javascript" src="agent.js"></script>
+        <script language="javascript" type="text/javascript" src="goodagent.js"></script>
+        <script language="javascript" type="text/javascript" src="badagent.js"></script>
+        <script language="javascript" type="text/javascript" src="neutralagent.js"></script>
+        <script language="javascript" type="text/javascript" src="game.js"></script>
+    </head>
+    <body>
+        <div id="main_page">
+            <div id="banner">
+                ANTAGONIST GAME SIMULATION
+            </div>
+            <div id="page">
+                <div id="stage">
+                    <div id="canvas_window">
+                        <div id="input_overlay">
+                            <div id="fields">
+                                <div class="input_fields">
+                                    <input id="gbratio" type="text" placeholder="Good to Bad Ratio (i.e. 2:1)" required/>
+                                    <br/>
+                                    <input id="obst" type="text" placeholder="Number of obstacles" required/>
+                                </div>
+                                <br/>
+                                <input onclick=takeover() class="prompt" type="submit" value="Start"/><br/>
+                                <div id="caption"><sup>*</sup>NOTE: MAKE SURE GOOD > BAD.</div>
+                            </div>
+                        </div>
+                        <div id="game_window">
+                            <canvas id="antagonist_game">
+                                Browser does not support this tag.
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+                <div id="stats">
+                    <div class="srow1">
+                        <div>
+                            <div>
+                                Generation: <input id="cgen" type="text" placeholder="N/A" readonly/>
+                            </div>
+                            <br/>
+                            <div>
+                                Ratio: <input id="cond" type="text" placeholder="N/A" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="srow2">
+                        <div id="banner">GAME LOG</div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Generation</td>
+                                    <td>|</td>
+                                    <td>Result</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="logtable">
+                        <table>
+                            <tbody>
+                                <tr id="log">
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td>N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <script>
+                    ib_format();
+                </script>
+            </div>
+            <div id="controls">
+                <input id="p_play" type="submit" onclick=pause_play() class="prompt" value="Pause"/>
+                <input type="submit" onclick=env_reset() class="prompt" value="Reset"/>
+            </div>
+        </div>
+    </body>
+</html>

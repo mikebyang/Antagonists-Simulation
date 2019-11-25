@@ -1,0 +1,18 @@
+{
+  "name": "antagonists",
+  "version": "1.0.0",
+  "description": "AI to develop strategy to win game",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AI",
+    "Game"
+  ],
+  "author": "Michael Yang",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

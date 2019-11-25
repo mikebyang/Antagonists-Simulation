@@ -1,0 +1,119 @@
+/*tags*/
+html, body {
+    height: 100%;
+}
+html {
+    overflow: hidden;
+}
+body {
+    margin: 0%;
+}
+#controls input[value="Pause"], #controls input[value="Play"], #controls input[value="Reset"] {
+    position: absolute;
+    width: 50%;
+    bottom: 0.5%;
+}
+#controls input[value="Reset"] {
+    right: 0%;
+}
+#controls input[value="Pause"], #controls input[value="Play"] {
+    left: 0%;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+#data table{
+    height: 100%;
+}
+td:first-child {
+    text-align: right;
+    width: 30%;
+}
+td:last-child {
+    text-align: left;
+    width: 30%;
+}
+/*ids*/
+#main_page {
+    height: 100%;
+    width: 100%;
+}
+#banner {
+    position: static;
+    text-align: center;
+    padding: 1%;
+    background-color: grey;
+    color: white;
+    width: 100%;
+}
+#page {
+    position: absolute;
+    text-align: center;
+    height: 90%;
+    width: 100%;
+    border-style: solid;
+}
+#caption {
+    padding-top: 1%;
+    font-size: 11px;
+}
+#controls {
+    text-align: center;
+    height: 8%;
+    bottom:0%;
+}
+#stage, #stats{
+    height: 100%;
+    text-align: center;
+}
+#stage {
+    position: relative;
+    width: 84.5%;
+    float: left;
+    border-right-style: solid;
+}
+#fields {
+    position: relative;
+    top: 38%;
+}
+#stats {
+    width: 15%;
+    float: right;
+}
+#canvas_window {
+    position: static;
+    height: 100%;
+}
+#input_overlay {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+#game_window {
+    position: absolute;
+    background: white;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+/*classes*/
+.srow1 {
+    margin: 18% 0 18% 0;
+}
+.srow2 {
+    height: 6.5%;
+    border-bottom-style: solid;
+}
+.logtable {
+    height: 76%;
+    overflow: auto;
+}
+.prompt {
+    font-size: 16px;
+}
+.input_fields {
+    font-size: 24px;
+}

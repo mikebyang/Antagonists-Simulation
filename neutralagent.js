@@ -1,0 +1,3 @@
+class neutralagent extends agent{
+    
+}

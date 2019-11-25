@@ -1,0 +1,3 @@
+class badagent extends agent{
+    
+}
